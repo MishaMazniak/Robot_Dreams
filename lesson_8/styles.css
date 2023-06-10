@@ -1,0 +1,46 @@
+body {
+  margin-left: 30px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 35%;
+}
+img {
+  width: 250px;
+  height: 350px;
+  border: 2px solid rgb(122, 10, 10);
+  padding: 10px;
+}
+.table_mane {
+  background: rgb(183, 183, 235);
+}
+.font_table {
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgb(119, 119, 224);
+}
+h1 {
+  font-style: italic;
+}
+h1,
+h4 {
+  border-bottom: 1px solid red;
+}
+a {
+  color: #00f;
+}
+a:visited {
+  color: #005;
+}
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style-type: square;
+}
+.align_left {
+  text-align: left;
+}
+.align_center {
+  text-align: center;
+}
