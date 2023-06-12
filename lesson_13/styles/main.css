@@ -1,0 +1,123 @@
+@font-face {
+  font-family: auraSeraphRegular;
+  src: url("../fonts/aura-seraph.regular.otf");
+}
+* {
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  max-width: 1024 px;
+}
+
+.pizza_main {
+  margin: 0 25px;
+}
+/* ___________ aside left/right ___________*/
+
+.aside {
+  width: 200px;
+  background-color: #c2c2c2;
+}
+
+/* ___________ header ___________*/
+
+header {
+  width: 600px;
+  height: 100px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  position: fixed;
+  z-index: 5;
+}
+header img {
+  width: 100px;
+  height: 100px;
+  margin: 0 55px;
+}
+.header_time p {
+  margin-top: 16px;
+}
+.header_adress p {
+  width: 200px;
+  height: 100px;
+  margin-top: 11px;
+  line-height: 37px;
+}
+
+/* ___________ navigation ___________*/
+
+nav {
+  width: 600px;
+  height: 70px;
+  margin-top: 100px;
+  display: flex;
+  line-height: 70px;
+  justify-content: center;
+  background: #c2c2c2;
+  font-family: auraSeraphRegular;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+nav div:nth-child(2) {
+  margin: 0 95px 0 138px;
+}
+nav a {
+  text-decoration: none;
+  color: #673c3c;
+}
+nav a:hover {
+  color: #d14444;
+}
+
+/* ___________ main content ___________*/
+
+.main_img {
+  width: 100%;
+  height: 274px;
+  background-image: url("../img/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main_content {
+  width: 600px;
+}
+.main_content h2 {
+  text-align: center;
+  margin: 21px 0;
+  font-family: "Lobster", cursive;
+  color: #d14444;
+}
+.main_content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 10px;
+}
+.main_menu {
+  display: flex;
+  justify-content: center;
+  color: #673c3c;
+}
+.main_menu div h4 {
+  margin: 0 0 25px 0;
+  text-align: center;
+  font-size: 1.2em;
+}
+.food_menu {
+  width: 32%;
+}
+.food {
+  display: flex;
+  width: 32%;
+}
+.food span {
+  margin-left: 15px;
+  line-height: 100px;
+  font-family: "Lobster", cursive;
+}

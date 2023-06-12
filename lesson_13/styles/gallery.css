@@ -1,0 +1,10 @@
+.img_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  margin: 5px auto;
+}
+.img_container img {
+  width: 194px;
+  margin: 3px;
+}

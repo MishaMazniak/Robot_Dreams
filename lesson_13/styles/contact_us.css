@@ -1,0 +1,91 @@
+@font-face {
+  font-family: conformity;
+  src: url("../fonts/conformity.normal.ttf");
+}
+
+/* ___________ contact_data ___________*/
+
+.contact_data {
+  margin: 20px 0;
+  font-style: italic;
+}
+.contact_data h2 {
+  text-align: center;
+}
+.contact_data span,
+.contact_data p {
+  font-weight: bold;
+}
+.contact_data span {
+  text-decoration: underline;
+}
+
+/* ___________ contact_data ___________*/
+
+.mapa_iframe iframe {
+  width: 500px;
+  height: 300px;
+  margin-left: 50px;
+  border: 1px solid black !important;
+}
+
+/* ___________ reserve_table ___________*/
+
+.reserve_table {
+  width: 600px;
+  margin-top: 25px;
+  position: relative;
+  left: 25%;
+}
+.reserve_table h2 {
+  position: relative;
+  left: 15%;
+}
+.reserve_table label {
+  display: block;
+  margin: 15px 0 5px 0;
+  font-weight: bold;
+  font-family: conformity;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+.reserve_table input {
+  height: 25px;
+  width: 300px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding-left: 10px;
+  outline: 0;
+}
+.reserve_table input:focus,
+.reserve_table textarea:focus {
+  border: 2px solid rgb(51, 167, 61);
+}
+
+.reserve_table textarea {
+  width: 300px;
+  height: 100px;
+  max-height: 250px;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 5px 0 0 10px;
+  outline: 0;
+}
+.reserve_table [type="submit"] {
+  display: block;
+  width: 100px;
+  height: 35px;
+  margin-top: 25px;
+  border-radius: 5px;
+  font-size: 1.3em;
+  background: rgb(51, 167, 61);
+  border: 2px solid rgb(51, 167, 61);
+  font-family: auraSeraphRegular;
+  font-size: 2em;
+}
+.reserve_table [type="submit"]:hover {
+  cursor: pointer;
+}
+.reserve_table [type="submit"]:active {
+  font-size: 1.8em;
+}
