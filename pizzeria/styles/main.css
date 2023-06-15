@@ -58,7 +58,7 @@ nav {
   display: flex;
   line-height: 70px;
   justify-content: center;
-  background: #c2c2c2;
+  background: var(--main_back_col);
   font-family: auraSeraphRegular;
   font-size: 24px;
   letter-spacing: 2px;
