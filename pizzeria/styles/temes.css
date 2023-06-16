@@ -1,0 +1,20 @@
+.my_theme {
+  --main_back_col: #11e911;
+  --text_main: #541add;
+  --text_main_hover: #e43f3f;
+  --text_main_menu: #f73333;
+  --header_back_col: white;
+  --width_main: 600px;
+  --width_aside: 200px;
+  --height_nav: 70px;
+  --border_col: black;
+  --border_input_focus: rgb(51, 167, 61);
+  --margin_bot_body: 50px;
+  --margin_logo_header: 0 55px;
+}
+.red_teme {
+  --main_back_col: #e90a0a;
+  --text_main: #131212;
+  --text_main_hover: #8910ec;
+  --text_main_menu: #251b5f;
+}

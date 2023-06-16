@@ -20,19 +20,20 @@
   text-decoration: underline;
 }
 
-/* ___________ contact_data ___________*/
+/* ___________ maps ___________*/
 
 .mapa_iframe iframe {
-  width: 500px;
+  width: calc(var(--width_main) - 80px);
   height: 300px;
-  margin-left: 50px;
-  border: 1px solid black !important;
+  margin-left: 40px;
+  margin-right: 40px;
+  border: 1px solid var(--border_col) !important;
 }
 
 /* ___________ reserve_table ___________*/
 
 .reserve_table {
-  width: 600px;
+  width: var(--width_main);
   margin-top: 25px;
   position: relative;
   left: 25%;
@@ -53,13 +54,13 @@
   height: 25px;
   width: 300px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 2px solid var(--border_col);
   padding-left: 10px;
   outline: 0;
 }
 .reserve_table input:focus,
 .reserve_table textarea:focus {
-  border: 2px solid rgb(51, 167, 61);
+  border: 2px solid var(--border_input_focus);
 }
 
 .reserve_table textarea {
@@ -67,7 +68,7 @@
   height: 100px;
   max-height: 250px;
   border-radius: 5px;
-  border: 2px solid black;
+  border: 2px solid var(--border_col);
   padding: 5px 0 0 10px;
   outline: 0;
 }
@@ -78,8 +79,8 @@
   margin-top: 25px;
   border-radius: 5px;
   font-size: 1.3em;
-  background: rgb(51, 167, 61);
-  border: 2px solid rgb(51, 167, 61);
+  background: var(--border_input_focus);
+  border: 2px solid var(--border_input_focus);
   font-family: auraSeraphRegular;
   font-size: 2em;
 }

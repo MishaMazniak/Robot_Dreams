@@ -1,7 +1,7 @@
 .img_container {
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
+  width: var(--width_main);
   margin: 5px auto;
 }
 .img_container img {
