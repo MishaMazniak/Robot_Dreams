@@ -8,7 +8,7 @@
 body {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: var(--margin_bot_body);
   max-width: 1024 px;
 }
 
@@ -18,16 +18,16 @@ body {
 /* ___________ aside left/right ___________*/
 
 .aside {
-  width: 200px;
-  background-color: #c2c2c2;
+  width: var(--width_aside);
+  background-color: var(--main_back_col);
 }
 
 /* ___________ header ___________*/
 
 header {
-  width: 600px;
+  width: var(--width_main);
   height: 100px;
-  background: white;
+  background: var(--header_back_col);
   display: flex;
   justify-content: center;
   font-family: "Lobster", cursive;
@@ -37,7 +37,7 @@ header {
 header img {
   width: 100px;
   height: 100px;
-  margin: 0 55px;
+  margin: var(--margin_img_header);
 }
 .header_time p {
   margin-top: 16px;
@@ -52,13 +52,13 @@ header img {
 /* ___________ navigation ___________*/
 
 nav {
-  width: 600px;
-  height: 70px;
+  width: var(--width_main);
+  height: var(--height_nav);
   margin-top: 100px;
   display: flex;
-  line-height: 70px;
+  line-height: var(--height_nav);
   justify-content: center;
-  background: #c2c2c2;
+  background: var(--main_back_col);
   font-family: auraSeraphRegular;
   font-size: 24px;
   letter-spacing: 2px;
@@ -68,10 +68,10 @@ nav div:nth-child(2) {
 }
 nav a {
   text-decoration: none;
-  color: #673c3c;
+  color: var(--text_main);
 }
 nav a:hover {
-  color: #d14444;
+  color: var(--text_main_hover);
 }
 
 /* ___________ main content ___________*/
@@ -84,13 +84,13 @@ nav a:hover {
   background-size: cover;
 }
 .main_content {
-  width: 600px;
+  width: var(--width_main);
 }
 .main_content h2 {
   text-align: center;
   margin: 21px 0;
   font-family: "Lobster", cursive;
-  color: #d14444;
+  color: var(--text_main_menu);
 }
 .main_content img {
   width: 100px;
@@ -102,7 +102,7 @@ nav a:hover {
 .main_menu {
   display: flex;
   justify-content: center;
-  color: #673c3c;
+  color: var(--text_main);
 }
 .main_menu div h4 {
   margin: 0 0 25px 0;
