@@ -1,0 +1,42 @@
+@media screen and (max-width: 389px) {
+  .aside,
+  .header_time,
+  .header_adress,
+  nav a {
+    display: none;
+  }
+  .my_theme,
+  .main_theme {
+    --width_main: 390px;
+  }
+  nav {
+    height: 60px;
+  }
+  .button_for_media {
+    display: block;
+    width: 36px;
+    height: 30px;
+    margin: auto 0 auto -55px;
+    background: #88bd97;
+  }
+  .button_for_media div {
+    width: 24px;
+    height: 2px;
+    margin: 4px auto 4px auto;
+    border-bottom: 2px solid black;
+  }
+  .main_img {
+    height: 200px;
+  }
+  .main_menu {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .food_menu {
+    margin-bottom: 25px;
+  }
+  .food_menu h4 {
+    position: relative;
+    left: 90px;
+  }
+}

@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: var(--margin_bot_body);
-  max-width: 1024 px;
+  /* max-width: 1024 px; */
 }
 
 .pizza_main {
@@ -63,7 +63,8 @@ nav {
   font-size: 24px;
   letter-spacing: 2px;
 }
-nav div:nth-child(2) {
+
+.nav_gallegy {
   margin: 0 95px 0 138px;
 }
 nav a {
@@ -72,6 +73,9 @@ nav a {
 }
 nav a:hover {
   color: var(--text_main_hover);
+}
+.button_for_media {
+  display: none;
 }
 
 /* ___________ main content ___________*/
