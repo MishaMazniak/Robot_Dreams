@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: var(--margin_bot_body);
-  /* max-width: 1024 px; */
 }
 
 .pizza_main {
@@ -85,7 +84,7 @@ nav a:hover {
 .button_for_media:active {
   transform: scale(1.1);
   box-shadow: 0 0 10px 10px #a0a0a0;
-  background: #c2c2c2;
+  background: var(--main_back_col);
 }
 
 /* ___________ main content ___________*/
@@ -96,6 +95,11 @@ nav a:hover {
   background-image: url("../img/logo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 70%;
+  transition: opacity 2s;
+}
+.main_img:hover {
+  opacity: 100%;
 }
 .main_content {
   width: var(--width_main);
@@ -112,11 +116,13 @@ nav a:hover {
   border-radius: 50%;
   float: left;
   margin-top: 10px;
+  transition: transform 1s, border-radius 1s;
 }
 .main_content img:hover {
   cursor: pointer;
   transform: scale(1.2);
   box-shadow: 0 0 50px 15px rgb(1, 53, 31);
+  border-radius: 20%;
 }
 .main_menu {
   display: flex;
