@@ -83,9 +83,12 @@
   border: 2px solid var(--border_input_focus);
   font-family: auraSeraphRegular;
   font-size: 2em;
+  opacity: 70%;
+  transition-delay: 0.2s;
 }
 .reserve_table [type="submit"]:hover {
   cursor: pointer;
+  opacity: 100%;
 }
 .reserve_table [type="submit"]:active {
   font-size: 1.8em;
