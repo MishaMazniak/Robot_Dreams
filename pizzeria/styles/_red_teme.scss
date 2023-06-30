@@ -1,0 +1,27 @@
+$main_back_col: #f50f0f;
+$text_main: #34e42e;
+$text_main_hover: #0c0707;
+$text_main_menu: #493333;
+
+.red_teme {
+  .aside {
+    background: $main_back_col;
+  }
+  nav {
+    background: $main_back_col;
+    a {
+      color: $text_main;
+      &:hover {
+        color: $text_main_hover;
+      }
+    }
+  }
+  .main_content {
+    h2 {
+      color: $text_main_menu;
+    }
+  }
+  .main_menu {
+    color: $text_main;
+  }
+}
