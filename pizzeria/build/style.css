@@ -64,7 +64,6 @@
 }
 
 body {
-  display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -201,7 +200,7 @@ body .pizza_main .main_content .main_menu .food_menu .food span {
   body .pizza_main nav .button_for_media div {
     width: 24px;
     height: 2px;
-    margin: 4px auto 4px auto;
+    margin: 5px auto 5px auto;
     border-bottom: 2px solid black;
   }
   body .pizza_main .main_content {
@@ -225,6 +224,10 @@ body .pizza_main .main_content .main_menu .food_menu .food span {
     position: relative;
     left: 90px;
   }
+}
+
+body {
+  display: flex;
 }
 
 .img_container {
@@ -284,66 +287,45 @@ body .pizza_main .main_content .main_menu .food_menu .food span {
 }
 
 .reserve_table {
-  width: 600px;
-  margin-top: 25px;
-  position: relative;
-  left: 25%;
+  width: 520px;
+  left: 5%;
 }
 .reserve_table h2 {
   position: relative;
-  left: 15%;
+  left: 33%;
+  font-style: italic;
 }
 .reserve_table label {
-  display: block;
-  margin: 15px 0 5px 0;
   font-weight: bold;
   font-family: conformity;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
 .reserve_table input {
-  height: 25px;
-  width: 300px;
-  border-radius: 5px;
-  border: 2px solid black;
-  padding-left: 10px;
-  outline: 0;
+  font-style: italic;
 }
-.reserve_table input:focus {
-  border: 2px solid rgb(51, 167, 61);
+.reserve_table input:hover {
+  border: 1px solid rgb(51, 167, 61);
 }
 .reserve_table textarea {
-  width: 300px;
-  height: 100px;
-  max-height: 250px;
-  border-radius: 5px;
-  border: 2px solid black;
-  padding: 5px 0 0 10px;
-  outline: 0;
+  font-style: italic;
 }
-.reserve_table textarea:focus {
-  border: 2px solid rgb(51, 167, 61);
+.reserve_table textarea:hover {
+  border: 1px solid rgb(51, 167, 61);
 }
-.reserve_table [type=submit] {
-  display: block;
-  width: 100px;
-  height: 35px;
-  margin-top: 25px;
-  border-radius: 5px;
-  font-size: 1.3em;
+.reserve_table .btn_submit {
   background: rgb(51, 167, 61);
-  border: 2px solid rgb(51, 167, 61);
-  font-family: auraSeraphRegular;
-  font-size: 2em;
+  border: 1px solid rgb(51, 167, 61);
   opacity: 70%;
-  transition-delay: 0.2s;
 }
-.reserve_table [type=submit]:hover {
+.reserve_table .btn_submit:hover {
   cursor: pointer;
   opacity: 100%;
 }
-.reserve_table [type=submit]:active {
-  font-size: 1.8em;
+.reserve_table .btn_submit:active {
+  background: rgb(51, 167, 61);
+  box-shadow: 0 0 20px 5px rgb(51, 167, 61);
+  border: 1px solid rgb(51, 167, 61);
 }
 
 /*# sourceMappingURL=style.css.map */
