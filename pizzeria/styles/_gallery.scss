@@ -1,0 +1,38 @@
+.img_container {
+  display: flex;
+  flex-wrap: wrap;
+  width: $width_main;
+  margin: 5px auto;
+  animation: box_gallery_animation 2s;
+  animation-iteration-count: 1;
+  img {
+    width: 194px;
+    margin: 3px;
+    &:hover {
+      z-index: 10;
+      border-radius: 25px;
+      animation: gallery_animation 2s infinite;
+    }
+  }
+
+  // ___________ Gallery focus on start  ___________
+
+  @keyframes box_gallery_animation {
+    0% {
+      opacity: 0%;
+      transform: scale(200%);
+    }
+    100% {
+    }
+  }
+
+  // ___________ Magnification of the image after hovering ________
+
+  @keyframes gallery_animation {
+    0% {
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+}
