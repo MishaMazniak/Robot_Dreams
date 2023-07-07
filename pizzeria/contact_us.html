@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>pizzeria_lesson_18 - SCSS</title>
+    <title>pizzeria_lesson_19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="build/style.css" type="text/css" />
     <link rel="icon" href="img/logo2.png" />
   </head>
-  <body class="main_teme">
+  <body class="d-md-flex main_teme">
     <div class="aside"></div>
     <div class="pizza_main">
       <header>
@@ -19,69 +26,105 @@
         </div>
       </header>
       <nav>
+        <div class="button_for_media">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div><a href="index.html">Home</a></div>
-        <div class="nav_gallegy"><a href="gallery.html">Gallery</a></div>
+        <div class="nav_gallegy">
+          <a href="gallery.html">Gallery</a>
+        </div>
         <div><a href="#">Contact Us</a></div>
       </nav>
-      <div class="contact_data">
-        <h2>Contact Us</h2>
-        <span>Phone</span>
-        <p>+38(095)4272231</p>
-        <span>Adress</span>
-        <p>Volodymyrsky prospect 27 Lubny, Ukraine, 37500</p>
-      </div>
-      <div class="mapa_iframe">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.693335912158!2d32.9973502317159!3d50.01710283110655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d65de76dfb6f1d%3A0x2ea57b6c443d0342!2sKazka!5e0!3m2!1spl!2spl!4v1686151615230!5m2!1spl!2spl"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <div class="reserve_table">
-        <h2>Reserve a table</h2>
-        <form>
-          <label for="first_name">First Name</label>
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            placeholder="First Name"
-            required
-          />
-          <label for="last_name">Last Name</label>
-          <input
-            type="text"
-            name="last_name"
-            id="last_name"
-            placeholder="last Name"
-            required
-          />
-          <label for="phone_number">Phone Number</label>
-          <input
-            type="number"
-            name="phone_number"
-            id="phone_number"
-            placeholder="Phone Number"
-            required
-          />
-          <label for="e_mail">E-mail</label>
-          <input
-            type="email"
-            name="e_mail"
-            id="e_mail"
-            placeholder="E-mail"
-            required
-          />
-          <label for="notes">Special notes</label>
-          <textarea name="notes" id="notes" placeholder="Your text"></textarea>
-          <input type="submit" value="Submit" />
-        </form>
+      <div class="container-sm">
+        <div class="contact_data">
+          <h2>Contact Us</h2>
+          <span>Phone</span>
+          <p>+38(095)4272231</p>
+          <span>Adress</span>
+          <p>Volodymyrsky prospect 27 Lubny, Ukraine, 37500</p>
+        </div>
+        <div class="mapa_iframe">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.693335912158!2d32.9973502317159!3d50.01710283110655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d65de76dfb6f1d%3A0x2ea57b6c443d0342!2sKazka!5e0!3m2!1spl!2spl!4v1686151615230!5m2!1spl!2spl"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="position-relative reserve_table">
+          <h2 class="mb-3 mt-3">Reserve a table</h2>
+          <form>
+            <div class="mb-3">
+              <label for="first_name" class="form-label">First Name</label>
+              <input
+                type="text"
+                name="first_name"
+                class="form-control form-control-lg"
+                id="first_name"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="last_name" class="form-label">Last Name</label>
+              <input
+                type="text"
+                name="last_name"
+                class="form-control form-control-lg"
+                id="last_name"
+                placeholder="last Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone_number" class="form-label">Phone Number</label>
+              <input
+                type="number"
+                name="phone_number"
+                class="form-control form-control-lg"
+                id="phone_number"
+                placeholder="--- --- ---"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="e_mail" class="form-label">E-mail</label>
+              <input
+                type="email"
+                name="e_mail"
+                class="form-control form-control-lg"
+                id="e_mail"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="notes" class="form-label">Special notes</label>
+              <textarea
+                name="notes"
+                class="form-control"
+                id="notes"
+                placeholder="Your text"
+                rows="3"
+              ></textarea>
+            </div>
+            <input
+              class="btn btn-primary btn-lg btn_submit"
+              type="submit"
+              value="Submit"
+            />
+          </form>
+        </div>
       </div>
     </div>
     <div class="aside"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
