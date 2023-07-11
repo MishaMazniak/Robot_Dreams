@@ -20,3 +20,8 @@ alert(
     "       / =   " +
     division
 )
+console.log("firstValue - " + firstValue + "    secondValue - " + secondValue)
+console.log(sum)
+console.log(dif)
+console.log(mult)
+console.log(division)
