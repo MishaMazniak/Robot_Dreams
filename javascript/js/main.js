@@ -1,4 +1,4 @@
-let arr = [21, 30, 102, 8, 28, 15, 10, [15], "text", 12];
+let arr = [21, 30, 102, 8, 28, 11, 10, [15, 9], "text", 12];
 let notString = [];
 // check the area on "string" and creat new arr "notString"
 let i = 0;
