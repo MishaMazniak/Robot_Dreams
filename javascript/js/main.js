@@ -1,32 +1,43 @@
-let firstValue = prompt("Enter your first value");
-let secondValue = prompt("Enter your second value");
-let controlZero;
-let controlNegative;
-let inputEmpti;
-
-if (firstValue === "" || secondValue === "") {
-  inputEmpti = alert("Error, not have data");
-} else {
-  if (secondValue != 0) controlZero = firstValue / secondValue;
-  else {
-    alert("Error, secondValue is can't be zero");
-    controlZero = "Error";
-  }
-  if (firstValue < secondValue) {
-    controlNegative = confirm(
-      "The first value is less on the second, do you want to continue?"
-    );
-    if (controlNegative) {
-      controlNegative = firstValue - secondValue;
-    } else controlNegative = "";
-  } else controlNegative = firstValue - secondValue;
-
-  let sum = +firstValue + +secondValue;
-  let mult = firstValue * secondValue;
-
-  console.log("firstValue - " + firstValue + "    secondValue - " + secondValue);
-  console.log(sum);
-  console.log(controlNegative);
-  console.log(mult);
-  console.log(controlZero);
+let arr = [21, 30, 102, 8, 28, 15, 10, [15], "text", 12];
+let notString = [];
+// check the area on "string" and creat new arr "notString"
+let i = 0;
+while (i < arr.length) {
+  if (typeof (arr[i]) !== "string" && typeof (arr[i]) !== "object") notString.push(arr[i]);
+  i++;
 }
+console.log("_____us area_____");
+console.log(arr);
+console.log("___New area without 'string'___");
+console.log(notString);
+// variable
+let sum = notString[0];
+let min = notString[0];
+let max = notString[0];
+// sum value
+let k = 1;
+do {
+  sum = sum + notString[k];
+  k++;
+}
+while (k < notString.length);
+console.log("sum value  -  " + sum);
+// max/min value
+for (i = 1; i < notString.length; i++) {
+  if (notString[i] <= min) min = notString[i];
+  else if (notString[i] > max) max = notString[i];
+}
+console.log("min value  -  " + min);
+console.log("max value  -  " + max);
+// #
+// ##
+// ###
+// ####
+// #####
+let symb = "#";
+for (let i = 0; i < 5; i++) {
+  console.log(symb);
+  symb = symb + "#";
+}
+
+
