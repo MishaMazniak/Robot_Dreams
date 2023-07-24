@@ -1,0 +1,38 @@
+/* Corected old code program with css */
+img {
+  width: 250px;
+  height: 350px;
+}
+.alignLeft {
+  text-align: left;
+}
+.alignCenter {
+  text-align: center;
+}
+
+/* Homework lesson 7 */
+
+body {
+  margin-left: 30px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fontTable {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.nameH1 {
+  font-style: italic;
+}
+a {
+  color: #00f;
+}
+a:visited {
+  color: #005;
+}
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style-type: square;
+}
