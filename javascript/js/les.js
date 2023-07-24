@@ -1,4 +1,4 @@
-console.log("______ lesson_25 ________");
+console.log("______ practics on the lesson_25  ________");
 let ob = {
     name: "Misha",
     age: 32,
