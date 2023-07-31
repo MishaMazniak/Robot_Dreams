@@ -16,11 +16,11 @@ console.log("_______ les-26 _________");
 function Accumulator(volum) {
   this.volum = volum;
   this.decrement = function () {
-    return volum - 1;
+    this.volum--;
   };
 }
 Accumulator.prototype.increment = function () {
-  return this.volum + 1;
+  this.volum++;
 };
 
 function CancelableAccumulator(volum) {
@@ -34,26 +34,25 @@ CancelableAccumulator.prototype = Accumulator.prototype;
 const liIon = new Accumulator(100);
 const liIon2 = new CancelableAccumulator(72);
 
-
 console.log(liIon);
 console.log(liIon2);
-console.log(liIon.increment());
-console.log(liIon.decrement());
 
+console.log("___decrement____");
+liIon.decrement();
+liIon.decrement();
+console.log(liIon.volum);
+liIon.decrement();
+liIon.decrement();
+console.log(liIon.volum);
+
+console.log("____increment_____");
+console.log(liIon.volum);
+liIon.increment();
+liIon.increment();
+liIon.increment();
+liIon.increment();
+console.log(liIon.volum);
+
+console.log("_____clear_______");
 console.log(liIon.volum + "-Ach");
 console.log(liIon2.clear() + "-Ach");
-
-console.log("____________");
-
-function FastLoad(volum, val) {
-  Accumulator.call(this, volum);
-  this.speadLoad = val;
-  this.timeLoad = function () {
-    console.log(this.speadLoad * 60 + " - min");
-  };
-}
-FastLoad.prototype = Accumulator.prototype;
-
-const fastBatery = new FastLoad(84, 2);
-console.log(fastBatery);
-fastBatery.timeLoad();
