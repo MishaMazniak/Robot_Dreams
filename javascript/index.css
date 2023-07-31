@@ -1,0 +1,9 @@
+.tweet {
+  width: 600px;
+}
+.tweet h4 {
+  color: red;
+}
+.tweet img {
+  width: 15px;
+}
