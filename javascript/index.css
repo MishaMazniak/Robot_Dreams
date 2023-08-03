@@ -7,3 +7,31 @@
 .tweet img {
   width: 15px;
 }
+label {
+  color: red;
+}
+.lab_math {
+  color: rgb(0, 26, 255);
+}
+.green {
+  color: rgba(58, 255, 36, 0.79);
+}
+.greenMax {
+  color: rgba(26, 254, 6, 1);
+  font-weight: bold;
+}
+.greenMin {
+  color: rgba(58, 255, 36, 0.44);
+  font-style: italic;
+}
+.red {
+  color: rgba(255, 0, 0, 0.62);
+}
+.redMax {
+  color: rgba(255, 0, 0, 0.8);
+  font-weight: bold;
+}
+.redMin {
+  color: rgba(255, 0, 0, 0.45);
+  font-style: italic;
+}
