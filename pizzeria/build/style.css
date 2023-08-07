@@ -167,13 +167,6 @@ body .pizza_main .main_content .main_menu .food_menu .food img {
   border-radius: 50%;
   float: left;
   margin-top: 10px;
-  transition: transform 1s, border-radius 1s;
-}
-body .pizza_main .main_content .main_menu .food_menu .food img:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  box-shadow: 0 0 50px 15px rgb(1, 53, 31);
-  border-radius: 20%;
 }
 body .pizza_main .main_content .main_menu .food_menu .food span {
   margin-left: 15px;
@@ -226,6 +219,13 @@ body .pizza_main .main_content .main_menu .food_menu .food span {
   }
 }
 
+.img_food_js {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 0 0 50px 15px rgb(1, 53, 31);
+  border-radius: 20%;
+}
+
 body {
   display: flex;
 }
@@ -242,11 +242,6 @@ body {
   width: 194px;
   margin: 3px;
 }
-.img_container img:hover {
-  z-index: 10;
-  border-radius: 25px;
-  animation: gallery_animation 2s infinite;
-}
 @keyframes box_gallery_animation {
   0% {
     opacity: 0%;
@@ -257,6 +252,12 @@ body {
   100% {
     transform: scale(1.5);
   }
+}
+
+.img_event_js {
+  z-index: 10;
+  border-radius: 25px;
+  transform: scale(1.5);
 }
 
 @font-face {

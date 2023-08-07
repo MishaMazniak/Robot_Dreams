@@ -11,13 +11,12 @@ body {
   img {
     width: 194px;
     margin: 3px;
-    &:hover {
-      z-index: 10;
-      border-radius: 25px;
-      animation: gallery_animation 2s infinite;
-    }
+    // &:hover {
+    //   z-index: 10;
+    //   border-radius: 25px;
+    //   animation: gallery_animation 2s infinite;
+    // }
   }
-
   // ___________ Gallery focus on start  ___________
 
   @keyframes box_gallery_animation {
@@ -38,4 +37,9 @@ body {
       transform: scale(1.5);
     }
   }
+}
+.img_event_js {
+  z-index: 10;
+  border-radius: 25px;
+  transform: scale(1.5);
 }
