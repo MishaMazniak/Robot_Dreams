@@ -27,6 +27,7 @@ const calculator = function () {
     let init = 1;
     return function () {
         return init++;
+
     };
 };
 const c = calculator();
