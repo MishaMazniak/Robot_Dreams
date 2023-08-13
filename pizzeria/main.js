@@ -6,13 +6,17 @@ mainImgEvent.forEach(myFunction);
 let chenchClass = true;
 function myFunction(item) {
     item.addEventListener('click', () => {
-        mainImgEvent.forEach(clearFunction);
+        mainImgEvent.forEach((el) => {
+            el.classList.remove("img_food_js");
+        });
         if (chenchClass) {
             item.classList.add("img_food_js");
             chenchClass = !chenchClass;
         } else chenchClass = !chenchClass;
     });
 }
-function clearFunction(el) {
-    el.classList.remove("img_food_js");
-}
+// if (item.classList.contains('img_food_js')) {
+//     item.classList.remove('img_food_js');
+// } else {
+//     item.classList.add('img_food_js');
+// }
