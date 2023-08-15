@@ -1,11 +1,11 @@
 let linkNowTime = document.getElementById("now_time");
 let linkLeftTime = document.getElementById("left_time");
 
-function editDateNow() {
+function dateNow() {
     let dateNow = new Date();
     linkNowTime.innerHTML = dateNow.toLocaleString();
 }
-setInterval(editDateNow, 1000);
+setInterval(dateNow, 1000);
 
 function timeLeft() {
     let dateNewYear = new Date("Dec 31, 2023 00:00:00").getTime();
