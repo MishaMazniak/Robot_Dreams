@@ -1,5 +1,5 @@
-let linkNowTime = document.getElementById("nowTime");
-let linkLeftTime = document.getElementById("leftTime");
+let linkNowTime = document.getElementById("now_time");
+let linkLeftTime = document.getElementById("left_time");
 
 function editDateNow() {
     let dateNow = new Date();
