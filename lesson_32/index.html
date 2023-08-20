@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson_32</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Lesson_32 Comunication with server</h1>
+        <nav>
+          <ul class="nav justify-content-center but-select">
+            <li class="nav-item">
+              <button class="btn btn-primary mx-2 my-3" title="Movies">
+                Movies
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary mx-2 my-3" title="Tweets">
+                Tweets
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary mx-2 my-3" title="Users">
+                Users
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-primary mx-2 my-3" title="Products">
+                Products
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="my-movies">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner" id="my-movie"></div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="my-tweets">
+          <div id="tweets"></div>
+        </div>
+        <div class="my-users">
+          <table class="table d-none" id="header-tab-users">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Username</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Address</th>
+              </tr>
+            </thead>
+            <tbody class="body-table" id="users"></tbody>
+          </table>
+        </div>
+        <div class="my-products">
+          <div class="row" id="products"></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="lesson.js"></script> -->
+  </body>
+</html>
