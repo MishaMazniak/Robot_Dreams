@@ -7,26 +7,45 @@ console.log("Lesson 32");
 // - З відповіді використовувати отримані поля.
 // - Вивести отримані дані на сторінку. Оформити виведений список за допомогою css
 
-let linkMovies = document.getElementById("my-movie");
+let linkShowMovies = document.getElementById("my-movies");
+let linkShowTweets = document.getElementById("my-tweets");
+let linkShowOnUsers = document.getElementById("my-users");
+let linkShowProducts = document.getElementById("my-products");
+
+let linkMovies = document.getElementById("movie");
 let linkTweets = document.getElementById("tweets");
 let linkHeaderTable = document.getElementById("header-tab-users");
 let linkOnUsers = document.getElementById("users");
-let linProducts = document.getElementById("products");
+let linkProducts = document.getElementById("products");
 
 let linkSelectTems = document.querySelectorAll('.but-select button');
 linkSelectTems.forEach(myFunction);
 
 function myFunction(item) {
     item.addEventListener('click', (el) => {
-        let elEvent = el.target.innerText;
-        if (elEvent === "Movies") myListMovies();
-        if (elEvent === "Tweets") myListTweets();
-        if (elEvent === "Users") myListUsers();
-        if (elEvent === "Products") myListProducts();
+        linkShowMovies.classList.add("d-none");
+        linkShowTweets.classList.add("d-none");
+        linkShowOnUsers.classList.add("d-none");
+        linkShowProducts.classList.add("d-none");
+        let elEvent = el.target.title;
+        if (elEvent === "Movies") {
+            linkShowMovies.classList.remove("d-none");
+            myListMovies();
+        }
+        if (elEvent === "Tweets") {
+            linkShowTweets.classList.remove("d-none");
+            myListTweets();
+        }
+        if (elEvent === "Users") {
+            linkShowOnUsers.classList.remove("d-none");
+            myListUsers();
+        }
+        if (elEvent === "Products") {
+            linkShowProducts.classList.remove("d-none");
+            myListProducts();
+        }
     });
 }
-
-
 function myListMovies() {
     fetch('https://dummyapi.online/api/movies')  //movies
         .then((res) => {
@@ -36,18 +55,24 @@ function myListMovies() {
             myMovies.forEach((key) => {
                 if (key.id === 1) {
                     linkMovies.innerHTML += `
-                    <div class = "carousel-item active">
-                    <a href ="${key.imdb_url}">
+                    <div class = "carousel-item active position-relative">
+                    <h2 class = "text-center">${key.movie}</h2>
+                    <span>Rating - ${key.rating}
+                        <img src="images/rating-icon.png" class="img-tweet">
+                    </span>
                     <img src="${key.image}" class="d-block w-100 img-movie" alt="...">
-                    </a>
+                    <a href ="${key.imdb_url}"><img src="images/play-icons.png" class="position-absolute top-50 start-50 translate-middle img-play" alt="..."></a>
                     </div>
                     `;
                 } else {
                     linkMovies.innerHTML += `
                     <div class = "carousel-item">
-                    <a href ="${key.imdb_url}">
+                    <h2  class = "text-center">${key.movie}</h2>
+                    <span>Rating - ${key.rating}
+                        <img src="images/rating-icon.png" class="img-tweet">
+                    </span>
                     <img src="${key.image}" class="d-block w-100 img-movie" alt="...">
-                    </a>
+                    <a href ="${key.imdb_url}"><img src="images/play-icons.png" class="position-absolute top-50 start-50 translate-middle img-play" alt="..."></a>
                     </div>
                     `;
                 }
@@ -66,11 +91,14 @@ function myListTweets() {
                 linkTweets.innerHTML += `
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">${key.title}
-                        <img class="img-tweet" src="images/tweet.jpeg">
+                    <h5 class="card-title">${key.title} 
                     </h5>
-                    <p class="card-text">${key.content}</p>         
-                    <span class="text-uppercase">${key.author}</span>
+                    <p class="card-text">${key.content}</p> 
+                    <a href ="#" class="text-decoration-none">        
+                        <span class="text-uppercase ">${key.author}
+                            <img class="img-tweet" src="images/twitter-icon.png">
+                        </span>
+                    </a>    
                     <span class="float-end">${key.date_published}</span>
                 </div>
             </div>
@@ -118,9 +146,8 @@ function myListProducts() {
             return res.json();
         })
         .then((myProducts) => {
-            console.log(myProducts);
             myProducts.forEach((key) => {
-                linProducts.innerHTML += `
+                linkProducts.innerHTML += `
                 <div class="card col-9 offset-2 col-sm-3 offset-md-0 my-3">
                     <img src="${key.image}" class="card-img-top" alt="img product">
                     <div class="card-body">
