@@ -16,11 +16,13 @@ function showProducts() {
         .then((products) => {
             products.forEach((product) => {
                 linkListProd.innerHTML += `
-                <tr ondblclick = "clickDelProduct('${product.id}')" onclick = "correctProduct('${product.id}')">
+                <tr>
                     <th scope="row">${product.num}</th>
                     <td>${product.product}</td>
                     <td>${product.howMach}</td>
                     <td>${product.val}</td>
+                    <td><img  onclick = "correctProduct('${product.id}')" src="igm/exchange.png"></td>
+                    <td><img class = "img-del"  onclick = "clickDelProduct('${product.id}')" src="igm/del.png"></td>
                 </tr>
             `;
             });
@@ -58,8 +60,6 @@ function clickDelProduct(product) {
 function correctProduct(element) {
     let showChangeForm = document.getElementById("correct-form");
     showChangeForm.classList.remove("d-none");
-    // showChangeForm.classList.add('d-block');
-
 
     document.getElementById('btn-change').onclick = function () {
         let changProdInput = document.getElementById("change-product").value;
