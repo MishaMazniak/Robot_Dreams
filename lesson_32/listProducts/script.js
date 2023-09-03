@@ -47,7 +47,8 @@ function addProducts() {
         });
     }
     document.getElementById("my-form").reset();
-    // showProducts();
+    linkListProd.innerHTML = "";
+    showProducts();
     // window.location.reload(false);
 }
 // num: linkListProd.rows.length + 1,
