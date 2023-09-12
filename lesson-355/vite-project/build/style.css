@@ -1,0 +1,151 @@
+body {
+  background: rgb(123, 233, 169);
+}
+body h1 {
+  text-align: center;
+}
+
+.wraper {
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+  background: white;
+}
+.wraper .app {
+  width: 480px;
+  height: 80px;
+  float: left;
+  margin: 10px 10px;
+  background: rgb(92, 59, 184);
+}
+.wraper .app .user-icon {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  border-radius: 50px;
+  border: 3px solid rgb(235, 237, 247);
+  background: rgb(92, 59, 184);
+}
+.wraper .app .users {
+  width: 480px;
+  height: 600px;
+  border: 2px solid rgb(38, 175, 72);
+  border-radius: 5px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.wraper .app .users .user {
+  border: 2px solid rgb(192, 179, 226);
+  border-radius: 20px;
+  padding: 15px 20px 5px 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgb(99, 77, 151);
+}
+.wraper .app .users .user a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+.wraper .app .users .user a .user-name img {
+  width: 100px;
+  height: 100px;
+  padding-bottom: 20px;
+  float: left;
+}
+.wraper .app .users .user a .user-name .user_data {
+  display: flex;
+  flex-direction: column;
+}
+.wraper .app .users .user a .user-name .user_data span {
+  text-align: right;
+}
+.wraper .app .users .user a .user-name .user_data .user-email,
+.wraper .app .users .user a .user-name .user_data .user-gender {
+  margin-top: 10px;
+}
+.wraper .app .users .user a .user-name .user_data .user-status {
+  margin-top: 20px;
+  color: red;
+}
+.wraper .app .users .user a .span-name {
+  font-family: myFirstFont;
+  color: rgb(92, 59, 184);
+  font-size: 1.5em;
+}
+.wraper .app .users .user:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 0 0 10px 10px #a0a0a0;
+}
+
+@font-face {
+  font-family: conformity;
+  src: url("../fonts/Rheaski demo.ttf");
+}
+@font-face {
+  font-family: virendra;
+  src: url("../fonts/Virendra.otf");
+}
+.app-post {
+  width: 480px;
+  height: 320px;
+  float: left;
+  margin: 10px 10px;
+  background: rgb(92, 59, 184);
+}
+.app-post .arrow-back {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 0 10px;
+}
+.app-post .arrow-back:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.app-post .user-icon-post {
+  width: 150px;
+  height: 150px;
+  margin: 10px 165px;
+  border-radius: 100px;
+  border: 3px solid rgb(243, 231, 231);
+}
+.app-post .post-user-name {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  font-family: conformity;
+  margin-top: -5px;
+}
+.app-post .post-conteiner {
+  width: 420px;
+  padding: 10px;
+  height: 300px;
+  background: white;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+.app-post .post-conteiner h2 {
+  font-family: conformity;
+  text-align: center;
+  margin-top: 5px;
+  color: rgb(38, 143, 17);
+}
+.app-post .post-conteiner .post-title {
+  font-style: italic;
+  margin-left: 20px;
+  border: 2px solid silver;
+  border-radius: 20px;
+  padding: 10px;
+}
+.app-post .post-conteiner .post-text {
+  font-family: virendra;
+  font-size: 1.2em;
+  margin-left: 20px;
+  border: 2px solid silver;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
