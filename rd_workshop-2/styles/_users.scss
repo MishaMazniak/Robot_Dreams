@@ -1,0 +1,85 @@
+$main-color: rgb(92, 59, 184);
+$width-app: 480px;
+body {
+  background: rgb(127, 233, 123);
+  h1 {
+    text-align: center;
+  }
+}
+.wraper {
+  width: 500px;
+  height: 900px;
+  margin: 0 auto;
+  background: white;
+
+  .app {
+    width: $width-app;
+    height: 80px;
+    float: left;
+    margin: 10px 10px;
+    background: $main-color;
+    .user-icon {
+      width: 100px;
+      height: 100px;
+      margin: 30px auto;
+      border-radius: 50px;
+      border: 3px solid rgb(235, 237, 247);
+      background: $main-color;
+    }
+    .users {
+      width: $width-app;
+      height: 700px;
+      border: 2px solid rgb(38, 175, 72);
+      border-radius: 5px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      .user {
+        border: 2px solid rgb(192, 179, 226);
+        border-radius: 20px;
+        padding: 15px 20px 5px 20px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgb(99, 77, 151);
+        a {
+          display: flex;
+          flex-direction: column;
+          text-decoration: none;
+          color: black;
+          .user-name {
+            img {
+              width: 100px;
+              height: 100px;
+              padding-bottom: 20px;
+              float: left;
+            }
+            .user_data {
+              display: flex;
+              flex-direction: column;
+              span {
+                text-align: right;
+              }
+              .user-email,
+              .user-gender {
+                margin-top: 10px;
+              }
+              .user-status {
+                margin-top: 20px;
+                color: red;
+              }
+            }
+          }
+          .span-name {
+            font-family: myFirstFont;
+            color: rgb(92, 59, 184);
+            font-size: 1.5em;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.02);
+          box-shadow: 0 0 10px 10px #a0a0a0;
+        }
+      }
+    }
+  }
+}
