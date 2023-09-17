@@ -21,7 +21,7 @@ function showProducts() {
                     <td>${product.product}</td>
                     <td>${product.howMach}</td>
                     <td>${product.val}</td>
-                    <td><img  onclick = "correctProduct('${product.id}')" src="igm/exchange.png"></td>
+                    <td><img onclick = "correctProduct('${product.id}')" src="igm/exchange.png"></td>
                     <td><img class = "img-del"  onclick = "clickDelProduct('${product.id}')" src="igm/del.png"></td>
                 </tr>
             `;

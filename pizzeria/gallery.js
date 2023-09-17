@@ -5,6 +5,7 @@ imgEvent.forEach(myFunction);
 
 let chenchClass = true;
 function myFunction(item) {
+    console.log(item);
     item.addEventListener('click', () => {
         imgEvent.forEach(clearFunction);
         if (chenchClass) {
