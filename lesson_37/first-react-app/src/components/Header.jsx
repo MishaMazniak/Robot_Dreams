@@ -1,6 +1,6 @@
-import logoProducts from "./assets/logo-products.png"
-import logoMediaExpert from "./assets/logoMediaExpert.jpeg"
-import "./css/header.css"
+import logoProducts from "../assets/logo-products.png"
+import logoMediaExpert from "../assets/logoMediaExpert.jpeg"
+import "../css/header.css"
 function Header() {
   return (
     <div className="logo-div">
