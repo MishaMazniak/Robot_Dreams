@@ -1,0 +1,68 @@
+@font-face {
+  font-family: conformity;
+  src: url("../fonts/Rheaski demo.ttf");
+}
+@font-face {
+  font-family: virendra;
+  src: url("../fonts/Virendra.otf");
+}
+.app-post {
+  width: $width-app;
+  height: 320px;
+  float: left;
+  margin: 10px 10px;
+  background: $main-color;
+  .arrow-back {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 0 10px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+  .user-icon-post {
+    width: 150px;
+    height: 150px;
+    margin: 10px 165px;
+    border-radius: 100px;
+    border: 3px solid rgb(243, 231, 231);
+  }
+  .post-user-name {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-family: conformity;
+    margin-top: -5px;
+  }
+  .post-conteiner {
+    width: calc($width-app - 60px);
+    padding: 10px;
+    height: 40px;
+    background: white;
+    margin: 20px auto;
+    border-radius: 20px;
+    h2 {
+      font-family: conformity;
+      text-align: center;
+      margin-top: 5px;
+      color: rgb(38, 143, 17);
+    }
+  }
+  .post-title {
+    font-style: italic;
+    margin-left: 20px;
+    margin-right: 30px;
+    padding: 10px;
+    color: red;
+  }
+  .post-text {
+    font-family: virendra;
+    font-size: 1.2em;
+    margin-left: 20px;
+    margin-right: 30px;
+    border: 2px solid silver;
+    border-radius: 20px;
+    padding: 10px;
+  }
+}
