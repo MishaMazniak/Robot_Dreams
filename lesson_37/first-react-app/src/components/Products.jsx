@@ -1,9 +1,10 @@
 import Product from "./Product"
-import "../css/products.css"
-function Products() {
+import "./products.css"
+
+function Products(props) {
   return (
     <div className="products-div">
-      <Product />
+      <Product product={props.productsIn} addToCart={props.addToCart} />
     </div>
   )
 }
