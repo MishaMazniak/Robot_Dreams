@@ -1,7 +1,3 @@
-.product-div {
-  text-align: left;
-  margin: 20px;
-}
 .product {
   display: flex;
   margin-top: 20px;
@@ -12,7 +8,13 @@
   flex-direction: column;
   margin: 20px 50px;
   padding: 20px 10px;
+  text-align: left;
 }
 .data-product span {
   margin-top: 5px;
+}
+.product img {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
 }
