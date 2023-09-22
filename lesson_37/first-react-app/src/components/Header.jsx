@@ -1,7 +1,9 @@
 import logoProducts from "../assets/logo-products.png"
 import logoMediaExpert from "../assets/logoMediaExpert.jpeg"
-import "../css/header.css"
-function Header() {
+import Cart from "./Cart.jsx"
+import "./header.css"
+
+function Header(props) {
   return (
     <div className="logo-div">
       <img
@@ -10,6 +12,7 @@ function Header() {
         className="loga-media-expert"
       ></img>
       <img src={logoProducts} alt="logo-shop" className="logo-shop"></img>
+      <Cart myProduct={props.count} />
     </div>
   )
 }
