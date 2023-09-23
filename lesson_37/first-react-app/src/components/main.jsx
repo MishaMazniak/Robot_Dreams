@@ -8,20 +8,17 @@ import Products from "./Products.jsx"
 import "./index.css"
 
 export const App = () => {
-  let products = []
+  const [productsIn, setProducts] = useState([])
+  const [productsInCart, setProductsInCart] = useState([])
+
   useEffect(() => {
     fetch("https://dummyjson.com/products")
       .then((response) => response.json())
       .then((data) => {
         let fetchProducts = data.products
-        fetchProducts.forEach((product) => {
-          products.push(product)
-        })
+        setProducts(fetchProducts)
       })
   }, [])
-  const [productsIn, setProducts] = useState(products)
-  const [productsInCart, setProductsInCart] = useState([])
-
   const addToCart = (prod) => {
     setProductsInCart([...productsInCart, prod])
   }
