@@ -9,7 +9,7 @@ function Header(props) {
       <img
         src={logoMediaExpert}
         alt="logo-shop"
-        className="loga-media-expert"
+        className="logo-media-expert"
       ></img>
       <img src={logoProducts} alt="logo-shop" className="logo-shop"></img>
       <Cart myProduct={props.count} />

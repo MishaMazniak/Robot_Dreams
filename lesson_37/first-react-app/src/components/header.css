@@ -1,12 +1,12 @@
 .logo-div {
   margin-bottom: 20px;
 }
-.loga-media-expert {
+.logo-media-expert {
   width: 100px;
   height: 100px;
   position: absolute;
 }
-.loga-media-expert:hover {
+.logo-media-expert:hover {
   cursor: pointer;
 }
 .logo-shop {
