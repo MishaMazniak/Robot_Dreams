@@ -1,17 +1,17 @@
 import "./product.css"
 
 function Product(props) {
-  let lisPproducts = props.product.map((el, index) => (
-    <div className="product" key={index}>
-      <img src={el.img}></img>
+  return (
+    <div className="product">
+      <img src={props.myProduct.images[0]}></img>
       <div className="data-product">
-        <span>model: {el.model}</span>
-        <span>display: {el.display}"</span>
-        <span>color: {el.color}</span>
-        <span>price: {el.price}$</span>
+        <span>title: {props.myProduct.title}</span>
+        <span>brand: {props.myProduct.brand}</span>
+        <span>rating: {props.myProduct.rating}</span>
+        <span>price: {props.myProduct.price}$</span>
         <button
           onClick={() => {
-            props.addToCart(el)
+            props.addToCart(props.myProduct)
           }}
           className="btn btn-success mt-2"
         >
@@ -19,8 +19,7 @@ function Product(props) {
         </button>
       </div>
     </div>
-  ))
-  return <div className="product-div">{lisPproducts}</div>
+  )
 }
 
 export default Product
