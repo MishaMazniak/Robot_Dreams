@@ -1,0 +1,9 @@
+.creat-product {
+  width: 80%;
+  margin: 10px auto;
+  border: 2px solid silver;
+}
+.form input {
+  margin: 5px;
+  border-color: rgb(30, 214, 122);
+}

@@ -3,7 +3,7 @@ import "./product.css"
 function Product(props) {
   return (
     <div className="product">
-      <img src={props.myProduct.images[0]}></img>
+      <img src={props.myProduct.images[0]} alt="foto-product"></img>
       <div className="data-product">
         <span>title: {props.myProduct.title}</span>
         <span>brand: {props.myProduct.brand}</span>
