@@ -3,7 +3,7 @@ import logoMediaExpert from "../../assets/logoMediaExpert.jpeg"
 import Cart from "../cart/Cart"
 import "./header.css"
 
-function Header(props) {
+function Header() {
   return (
     <div className="logo-div">
       <img
@@ -12,7 +12,7 @@ function Header(props) {
         className="logo-media-expert"
       ></img>
       <img src={logoProducts} alt="logo-shop" className="logo-shop"></img>
-      <Cart myProduct={props.count} />
+      <Cart></Cart>
     </div>
   )
 }

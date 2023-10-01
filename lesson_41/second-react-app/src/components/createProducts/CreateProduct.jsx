@@ -1,9 +1,10 @@
-import {useContext, useState} from "react"
-import {addNewProduct} from "../../App"
+import {useState} from "react"
+import {addProduct} from "../../redux/cart"
+import {useDispatch} from "react-redux"
 import "./createProduct.css"
 
 function CreateProduct() {
-  const [productsIn, setProducts] = useContext(addNewProduct)
+  const dispatch = useDispatch()
   const [newProduct, setNewProduct] = useState({
     url: "",
     title: "",
@@ -12,15 +13,14 @@ function CreateProduct() {
     price: ""
   })
   const send = () => {
-    const poroductToAdd = {
+    const addNewProduct = {
       images: [newProduct.url],
       title: newProduct.title,
       brand: newProduct.brand,
       rating: parseFloat(newProduct.rating),
       price: parseFloat(newProduct.price)
     }
-
-    setProducts([...productsIn, poroductToAdd])
+    dispatch(addProduct(addNewProduct))
 
     setNewProduct({
       url: "",

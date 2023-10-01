@@ -11,7 +11,7 @@ function Product(props) {
         <span>price: {props.myProduct.price}$</span>
         <button
           onClick={() => {
-            props.addToCart(props.myProduct)
+            props.addToCart()
           }}
           className="btn btn-success mt-2"
         >
