@@ -1,0 +1,20 @@
+.product {
+  display: flex;
+  margin-top: 20px;
+  border-bottom: 2px solid silver;
+}
+.data-product {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+  padding: 20px 10px;
+  text-align: left;
+}
+.data-product span {
+  margin-top: 5px;
+}
+.product img {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
